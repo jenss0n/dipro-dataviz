@@ -1,0 +1,15 @@
+{
+  "name": "umsetztung-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sketch-countries.js",
+  "scripts": {
+    "scss": "sass --watch style.scss style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.79.4",
+    "scss": "^0.2.4"
+  }
+}

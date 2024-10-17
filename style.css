@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --blau: #0012ff;
+  --schriftfarbe: #101d40;
+  --weiss: #ffffff;
+  --hoverblau: #e0f2ff;
+  --schriftgrosseText: 18px;
+  --schriftgrosseH1: 60px;
+  --schrifgrosseH2: 30px;
+  --schrfitgrosseH3: 30px;
+  --schriftgrosseH4: 24px;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0px 50px;
+  background-color: var(--weiss);
+  font-size: var(--schriftgrosseText);
+}
+
+p {
+  font-size: var(--schriftgrosseText);
+  color: var(--schriftfarbe);
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: var(--schriftgrosseH1);
+  color: var(--schriftfarbe);
+}
+
+h3 {
+  font-size: var(--schrfitgrosseH3);
+  color: var(--schriftfarbe);
+  margin: 0px;
+  width: 75%;
+}
+
+h4 {
+  font-size: var(--schriftgrosseH4);
+  color: var(--schriftfarbe);
+  margin: 0px;
+  width: 75%;
+}
+
+header {
+  padding: 0px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .oecd-logo {
+  height: 50px;
+  float: left;
+}
+header .header-link {
+  text-decoration: none;
+  color: var(--weiss);
+  float: right;
+  background-color: var(--blau);
+  padding: 10px;
+  width: 320px;
+}
+
+.container {
+  border: 4px solid var(--blau);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container p {
+  width: 50%;
+}
+
+.economic {
+  justify-content: right;
+}
+
+#border-botton {
+  border-bottom: 0px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  border: 4px solid var(--blau);
+  margin: -4px 0px 0px -4px;
+}
+.content .description {
+  padding: 30px 50px;
+}
+.content .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content .menu {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid var(--blau);
+  margin: -4px;
+}
+.content .menu .menu-button {
+  background-color: var(--weiss);
+  color: var(--schriftfarbe);
+  border: 4px solid var(--blau);
+  padding: 10px;
+  margin: -4px;
+  cursor: pointer;
+  text-align: left;
+  width: 160px;
+  font-size: var(--schriftgrosseText);
+}
+.content .menu .menu-button:hover {
+  background-color: var(--hoverblau);
+}
+.content #borderright {
+  border-right: 0px;
+}
+.content .content-mini {
+  border: 4px solid var(--blau);
+  margin: -4px;
+  margin-left: 160px;
+  width: 100%;
+  padding: 50px;
+}
+.content .content-mini h2 {
+  background-color: var(--blau);
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  color: yellow;
+  font-size: 30pt;
+  font-weight: bold;
+  margin: -50px;
+}
+.content .content-mini p {
+  width: 50%;
+}
+.content #margin-right {
+  margin-right: 0px;
+}
+.content .economies-section {
+  position: relative;
+  top: -42px;
+  right: -4px;
+}
+.content .economies-section .economic-title {
+  text-decoration: none;
+  color: var(--weiss);
+  float: right;
+  background-color: var(--blau);
+  padding: 10px 10px 10px 14px;
+  width: 320px;
+  stroke: 4px solid var(--blau);
+}
+.content .economies-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.content .economies-section ul li {
+  border: 4px solid var(--blau);
+  margin: -4px;
+  width: 320px;
+  padding: 0px 10px;
+}
+.content .economies-section ul li button {
+  background-color: var(--weiss);
+  color: var(--schriftfarbe);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  font-size: var(--schriftgrosseText);
+}
+.content .economies-section ul li button:hover {
+  background-color: var(--hoverblau);
+}
+.content .economies-section ul li:hover {
+  background-color: var(--hoverblau);
+}
+
+.score-explanation {
+  font-size: var(--schriftgrosseText);
+  border: 4px solid var(--blau);
+  margin: 0px -4px -4px 160px;
+  width: calc(100% - 164px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 80px 0px;
+}
+.score-explanation .select-button,
+.score-explanation .compare-button {
+  position: relative;
+  padding: 10px;
+  width: 160px;
+  text-align: left;
+  cursor: pointer;
+  border: 4px solid var(--blau);
+}
+.score-explanation .select-button::before,
+.score-explanation .compare-button::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: -84px;
+  bottom: 0;
+  width: 4px;
+  height: 320px;
+  background-color: var(--blau);
+}
+.score-explanation .select-button::after,
+.score-explanation .compare-button::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  bottom: -185px;
+  width: 30px;
+  height: 30px;
+  border-left: 4px solid var(--blau);
+  border-bottom: 4px solid var(--blau);
+  transform: translateX(-50%) rotate(-45deg);
+}
+.score-explanation .select-button {
+  background-color: var(--blau);
+  color: #fff;
+}
+.score-explanation .select-button::before {
+  left: -8px;
+}
+.score-explanation .select-button::after {
+  left: -6px;
+}
+.score-explanation .compare-button {
+  background-color: var(--weiss);
+  color: var(--schriftfarbe);
+}
+
+.visualization {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.compare {
+  flex-grow: 1;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block;
+  border: 0px;
+}
+
+canvas {
+  display: block;
+  width: auto;
+  height: 3200px;
+}
+
+#checkbox-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+.selection {
+  width: 368px;
+  flex-shrink: 0;
+  border-right: 4px solid var(--blau);
+  height: 100%;
+}
+.selection #checkbox-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: -4px;
+}
+.selection #checkbox-container label {
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+  font-size: var(--schriftgrosseText);
+  align-items: center;
+  border: 4px solid var(--blau);
+  height: 44px;
+  margin-top: -4px;
+}
+.selection #checkbox-container label input[type=checkbox] {
+  appearance: none;
+  width: 52px;
+  height: 52px;
+  margin-left: -4px;
+  border: 4px solid var(--blau);
+  background-color: var(--weiss);
+  cursor: pointer;
+}
+.selection #checkbox-container label input[type=checkbox]:checked {
+  background-color: var(--blau);
+}
+.selection #checkbox-container label input:hover {
+  background-color: var(--hoverblau);
+}
+.selection #checkbox-container label:hover {
+  background-color: var(--hoverblau);
+}
+.selection #checkbox-container label:last-child {
+  margin-top: 50px;
+}
+
+#checkbox-container label input[type=checkbox] {
+  margin-right: 8px;
+}
+
+#policy-container {
+  margin-top: 52px;
+}
+
+.policy-item .policy-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.policy-item .policy-header .policy-number {
+  width: 50px;
+  height: 44px;
+  border: 4px solid var(--blau);
+  margin: -4px 0px;
+  background-color: var(--blau);
+  color: var(--weiss);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.policy-item .policy-header .policy-name {
+  height: 44px;
+  width: 100%;
+  border: 4px solid var(--blau);
+  border-left: 8px solid var(--blau);
+  margin: -4px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.years {
+  margin-left: 50px;
+  width: calc(100% - 62px);
+  border: 4px solid var(--blau);
+  margin-right: -4px;
+  margin-top: 0px;
+  margin-bottom: -4px;
+  height: 44px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.policy-item .years:last-child {
+  margin-bottom: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
